@@ -61,23 +61,23 @@ class Drive_Square:
     #def move_robot(self):
      
         #YOUR CODE GOES HERE#
-        #self.cmd_msg.header.stamp = rospy.Time.now()
-        #self.cmd_msg.v = 0.5 # striaght line velocity
-        #self.cmd_msg.omega = 0.0
-        #self.pub.publish(self.cmd_msg)
-        #rospy.loginfo("Forward!")
+        #self.cmd_msg.header.stamp = rospy.Time.now()#
+        #self.cmd_msg.v = 0.5 # striaght line velocity#
+        #self.cmd_msg.omega = 0.0#
+        #self.pub.publish(self.cmd_msg)#
+        #rospy.loginfo("Forward!")#
         #rospy.sleep(1) # straight line driving time
         
-        #self.cmd_msg.header.stamp = rospy.Time.now()
+        #self.cmd_msg.header.stamp = rospy.Time.now()#
         #self.cmd_msg.v = -0.5 # striaght line velocity
-        #self.cmd_msg.omega = 0.0
-        #self.pub.publish(self.cmd_msg)
-        #rospy.loginfo("Backward!")
+        #self.cmd_msg.omega = 0.0#
+        #self.pub.publish(self.cmd_msg)#
+        #rospy.loginfo("Backward!")#
         #rospy.sleep(1) # straight line driving time
         
         ######################
                 
-        #self.stop_robot()
+        #self.stop_robot()#
 
 if __name__ == '__main__':
     try:
