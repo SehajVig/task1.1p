@@ -1,6 +1,19 @@
 <launch>
-    <!-- vehicle name so it can work with any robot -->
-    <group ns="$(env VEHICLE_NAME)">
-        <node pkg="open_loop_square" name="open_loop_square" type="open_loop_square.py" output="screen"/>
+
+    <group ns="mybot002828js">
+
+        <!-- Your square movement node -->
+        <node pkg="open_loop_square"
+              name="open_loop_square"
+              type="open_loop_square.py"
+              output="screen"/>
+
+        <!-- Delay + FSM trigger -->
+        <node pkg="rosbash"
+              type="bash"
+              name="delayed_fsm"
+              args="-c 'sleep 3; rostopic pub /mybot002828js/fsm_node/mode duckietown_msgs/FSMState &quot;state: LANE_FOLLOWING&quot; -1'" />
+
     </group>
+
 </launch>
